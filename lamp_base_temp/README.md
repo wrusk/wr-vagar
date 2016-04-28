@@ -17,5 +17,4 @@ Contents
 Credits and Inspiration
 -----------------------
 
-Inspired and adapted from the tutorial at (https://www.dev-metal.com/super-simple-vagrant-lamp-stack-bootstrap-installable-one-command/(https://www.dev-metal.com/super-simple-vagrant-lamp-stack-bootstrap-installable-one-command/)
-
+Inspired and adapted from the tutorial at https://www.dev-metal.com/super-simple-vagrant-lamp-stack-bootstrap-installable-one-command/
