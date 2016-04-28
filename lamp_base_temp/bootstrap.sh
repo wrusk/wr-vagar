@@ -61,3 +61,20 @@ sudo apt-get -y install git
 # install Composer
 curl -s https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
+
+# optional Drupal configuration
+# optional commands for adding drush uncomment to enable
+sudo composer global require drush/drush:dev-master
+sudo ln -s /root/.composer/vendor/bin/drush /usr/bin/drush
+sudo chmod 755 /root/
+
+# add a Drupal db
+#clean up first
+#echo "Droping database drupal_vagrant if it already exists."
+sudo mysql -root -p12345678 -e "DROP DATABASE IF EXISTS drupal_vagrant"
+
+#echo "Creating new database drupal_vagrant"
+sudo mysql -uroot -p12345678 -e "create database drupal_vagrant"
+
+# drush dl drupal-7.x
+# drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://root:12345678@localhost/drupal_vagrant

@@ -1,2 +1,3 @@
-**/html/
-**/db_dump/
+**/html/*
+**/project_io/*
+**/.vagrant/
