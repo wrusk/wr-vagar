@@ -7,6 +7,9 @@ PROJECTFOLDER='myproject'
 # create project folder
 sudo mkdir "/var/www/html/${PROJECTFOLDER}"
 
+# add a repo for php 5.6 - php5.9 would be downloaded without this
+sudo apt-add-repository ppa:ondrej/php5-5.6
+
 # update / upgrade
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -14,7 +17,7 @@ sudo apt-get -y upgrade
 # curl is not configured by default in this version
 sudo apt-get -y install curl
 
-# install apache 2.5 and php 5.5
+# install apache 2.5 and php 5.6
 sudo apt-get install -y apache2
 sudo apt-get install -y php5
 
