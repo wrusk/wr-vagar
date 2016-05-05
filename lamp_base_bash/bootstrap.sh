@@ -14,12 +14,16 @@ sudo apt-add-repository ppa:ondrej/php5-5.6
 sudo apt-get update
 sudo apt-get -y upgrade
 
-# curl is not configured by default in this version
+# curl is not configured by default in this version, nor is unzip
 sudo apt-get -y install curl
+sudo apt-get install unzip
 
 # install apache 2.5 and php 5.6
 sudo apt-get install -y apache2
 sudo apt-get install -y php5
+# add additional php5 extensions for apache2. customize based on what you need.
+sudo apt-get install -y php5-curl php5-xsl
+
 
 # install mysql and give password to installer
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
@@ -53,7 +57,7 @@ echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
 sudo a2enmod rewrite
 
 # restart apache
-service apache2 restart
+sudo service apache2 restart
 
 # install git
 sudo apt-get -y install git
