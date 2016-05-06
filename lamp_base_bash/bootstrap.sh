@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-# Use single quotes instead of double quotes to make it work with special-character passwords
-PASSWORD='12345678'
-PROJECTFOLDER='myproject'
+# read the variables file for project name, password, etc.
+source /home/vagrant/scripts/guest_vars.cfg
 
 # create project folder
 sudo mkdir "/var/www/html/${PROJECTFOLDER}"
