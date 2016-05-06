@@ -1,3 +1,5 @@
 **/html/*
+!**/html/README.md
 **/project_io/*
+!**/project_io/README.md
 **/.vagrant/
