@@ -1,6 +1,20 @@
-# wr-vagar
+wr-vagrant-lamp
+===============
 
-My collection of [vagrant](https://www.vagrantup.com/) configurations for development:
+LAMP stack vm using Vagrant, Puppet, Virtual Box
 
-* wr-vagar-lamp: configurations for LAMP stack development
-* wr-vagar-mc:  configurations for MineCraft modding and mapmaking
+Contents
+--------
+
+* ubuntu/trusty64
+* Apache 2
+* MySQL
+* PHP 7
+* PHPMyAdmin
+* git
+* composer
+
+Credits and Inspiration
+-----------------------
+
+Inspired and adapted from the tutorial at https://www.dev-metal.com/super-simple-vagrant-lamp-stack-bootstrap-installable-one-command/
